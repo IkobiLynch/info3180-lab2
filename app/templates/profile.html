@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="top">
+    <div class="imageContainer">
+        <img src="{{ url_for('static', filename= 'Images/TalikoTransparent.jpeg') }}" alt="">
+        <h1>{{ name }}</h1>
+        <h4> @iLynch </h4>
+        <h3> Kingston, Jamaica</h3>
+        <h3> {{ date }}</h3>
+    </div>
+</div>
+<div class="bottom">
+    <div class="descPara">
+        <p>
+            I am a final year student at The University of the West Indies. I aspire to own my own tech company in the near future, 
+            so I am trying to have as broad of a knowledge as I can have about various technical topics. I will get it done, and I
+            will be succesful. Thank you for attending my Ted talk. 
+        </p>
+    </div>
+
+    <div class="numbersContainer">
+
+        <div class="numTitle">
+            <div class="number">
+                <h6>7</h6>
+            </div>
+            <div class="title">
+                <h6>Posts</h6>
+            </div>
+        </div>
+
+        <div class="numTitle">
+            <div class="number">
+                <h6>200</h6>
+            </div>
+            <div class="title">
+                <h6>Following</h6>
+            </div>
+        </div>
+
+        <div class="numTitle">
+            <div class="number">
+                <h6>800</h6>
+            </div>
+            <div class="title">
+                <h6>Followers</h6>
+            </div>
+        </div>
+            
+    
+    </div>
+
+    <div class="followButton">
+        <form method="post" action="">
+            <input type="button" value="Follow">
+        </form>
+    </div>
+</div>
+{% endblock %}
